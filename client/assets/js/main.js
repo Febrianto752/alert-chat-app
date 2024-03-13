@@ -27,26 +27,15 @@ joinBtnRoom2Elem.addEventListener("click", function () {
 
 sendBtnRoom1.addEventListener("click", () => {
     let message = inputMessageRoom1Elem.value;
-
     socket.emit("sendMessage", "room1", message)
-    // messagesWrapperRoom1Elem.appendChild(createMessageElem(message))
     inputMessageRoom1Elem.value = ""
-    // playSound()
-
 })
 
 sendBtnRoom2.addEventListener("click", function () {
     let message = inputMessageRoom2Elem.value;
-
     socket.emit("sendMessage", "room2", message)
-    // messagesWrapperRoom2Elem.appendChild(createMessageElem(message))
     inputMessageRoom2Elem.value = ""
-
-    // playSound()
-
 })
-
-
 
 
 
