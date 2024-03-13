@@ -9,7 +9,8 @@ const messagesWrapperRoom2Elem = document.getElementById("messagesWrapperRoom2")
 const sendBtnRoom1 = document.getElementById("sendBtnRoom1");
 const sendBtnRoom2 = document.getElementById("sendBtnRoom2");
 
-const socket = io('ws://192.168.65.156:80')
+// const socket = io('ws://192.168.65.156:80')
+const socket = io()
 
 joinBtnRoom1Elem.addEventListener("click", function () {
     socket.emit("joinRoom", "room1")

@@ -4,7 +4,7 @@ var router = express.Router();
 module.exports = function (io) {
   /* GET home page. */
   router.get('/', function (req, res, next) {
-    res.render('index', { title: 'Express' });
+    res.render('index', { title: 'Alert Chat App' });
   });
 
   router.post('/alert-room1', function (req, res, next) {
