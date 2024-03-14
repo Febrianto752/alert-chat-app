@@ -61,6 +61,7 @@ function createMessageElem(message) {
     div.classList.add("my-3", "px-6", "py-2", "rounded-md", "w-fit", "bg-white", "shadow-lg")
 
     const p = document.createElement("p")
+
     p.innerText = message;
 
     div.appendChild(p)
