@@ -60,9 +60,11 @@ function createMessageElem(message) {
     const div = document.createElement("div")
     div.classList.add("my-3", "px-6", "py-2", "rounded-md", "w-fit", "bg-white", "shadow-lg")
 
-    const p = document.createElement("p")
+    const p = document.createElement("pre")
 
-    p.innerText = message;
+    message = message.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">$1</a>');
+
+    p.innerHTML = message;
 
     div.appendChild(p)
 
